@@ -31,7 +31,7 @@ scene.add(light3);
 
 let speed = 0.001;
 let chaos = 2;
-const geometry = new THREE.SphereGeometry(1.5, 128, 128);
+const geometry = new THREE.SphereGeometry(1.5, 80, 80);
 // const geometry = new THREE.SphereGeometry(1.5, 20, 20);
 // const material = new THREE.MeshNormalMaterial();
 // const material = new THREE.MeshPhongMaterial({color: 0xfeada6, flatShading: true});
