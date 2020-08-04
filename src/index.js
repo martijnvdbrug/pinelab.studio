@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-console.log('jatoch')
+console.log('Ik zie je wel kijken.')
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
