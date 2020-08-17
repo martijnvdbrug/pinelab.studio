@@ -3,7 +3,8 @@
 $header-font-family: 'Open Sans', sans-serif;
 $header-font-weight: 800;
 $header-color: #21252E;
-$body-font-family: 'Open Sans', sans-serif;
+$body-font-family: 'Nunito', sans-serif;
+$body-font-weight: 300;
 $body-font-color: #21252E;
 
 // Global styles
@@ -65,20 +66,41 @@ $body-font-color: #21252E;
 @include foundation-prototype-classes;
 
 canvas {
+  width: 100vw;
+  height: 100vh;
   display: block;
-  z-index: 0;
-}
-
-
-#background {
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
 }
+
+a { color: $body-font-color}
+a:active { color: $body-font-color}
+a:hover { color: $body-font-color}
+a:link { color: $body-font-color}
 
 #intro {
   z-index: 2;
-  position: absolute;
+/*  position: absolute;*/
 }
 
 #intro h1 {
   font-size: 4rem;
+}
+
+.fullheight {
+  height: 100vh;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -moz-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
 }

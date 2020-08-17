@@ -9,9 +9,8 @@
     const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
 
     renderer.setSize(window.innerWidth, window.innerHeight);
-    // document.body.appendChild(renderer.domElement);
-
-    document.getElementById( 'canvasDiv' ).appendChild(renderer.domElement);
+    document.body.appendChild(renderer.domElement);
+    // document.getElementById( 'canvasDiv' ).appendChild(renderer.domElement);
 
 
     camera.position.z = 5;
