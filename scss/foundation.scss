@@ -2,10 +2,10 @@
 
 $header-font-family: 'Open Sans', sans-serif;
 $header-font-weight: 800;
-$header-color: #21252E;
+$header-color: #424242;
 $body-font-family: 'Nunito', sans-serif;
-$body-font-weight: 300;
-$body-font-color: #21252E;
+$body-font-weight: 400;
+$body-font-color: #424242;
 
 // Global styles
 @include foundation-global-styles;
@@ -75,10 +75,14 @@ canvas {
   z-index: -9999;
 }
 
-a { color: $body-font-color}
-a:active { color: $body-font-color}
-a:hover { color: $body-font-color}
-a:link { color: $body-font-color}
+#intro a { color: $body-font-color}
+#intro a:active { color: $body-font-color}
+#intro a:hover { color: $body-font-color}
+#intro a:link { color: $body-font-color}
+
+#content a {
+  text-decoration: underline;
+}
 
 #intro {
   z-index: 2;
@@ -89,18 +93,45 @@ a:link { color: $body-font-color}
   font-size: 4rem;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 .fullheight {
   height: 100vh;
 }
 
-.rotate90 {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  -moz-transform-origin: 100% 100%;
-  -o-transform-origin: 100% 100%;
-  -webkit-transform-origin: 100% 100%;
+.cell {
+  padding-bottom: 20px;
+  @include breakpoint(medium up) {
+    padding-left: 40px;
+  }
 }
+
+p {
+  font-size: 1.3rem;
+}
+
+#contact {
+  background-color: $body-font-color;
+  color: white;
+}
+
+#contact h3 {
+  color: white;
+}
+
+#contact a {
+  color: white;
+}
+#contact p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+#title-bar {
+  background-color: $body-font-color;
+  color: white;
+  margin-bottom: 0;
+}
+

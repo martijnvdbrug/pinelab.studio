@@ -72,8 +72,13 @@ function animate() {
     update();
 }
 
+function scrollAnimation() {
+    grow = true;
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {grow = false},1000); // stop animation when scrolling stops
+}
 
-$(document).on('mousewheel', function (e) {
+$(document).on('scroll mousewheel', function (e) {
     grow = true;
     clearTimeout(this.timeout);
     this.timeout = setTimeout(() => {grow = false},1000); // stop animation when scrolling stops
