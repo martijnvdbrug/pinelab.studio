@@ -80,6 +80,10 @@ canvas {
 #intro a:hover { color: $body-font-color}
 #intro a:link { color: $body-font-color}
 
+#content {
+  background-color: white;
+}
+
 #content a {
   text-decoration: underline;
 }
