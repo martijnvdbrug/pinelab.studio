@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "npm run copy && concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"  \"nodemon --watch src --exec npm run rollup\"",
+    "start": "npm run copy && concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"  \"nodemon --watch src --exec npm run rollup\"",
     "build": "npx @11ty/eleventy",
     "copy": "cp node_modules/foundation-sites/dist/js/foundation.min.js js/",
     "sass": "node-sass scss -o css --output-style compressed --watch",
