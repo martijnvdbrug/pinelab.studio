@@ -1,6 +1,6 @@
 @import './node_modules/foundation-sites/scss/foundation';
 
-$header-font-family: 'Open Sans', sans-serif;
+$header-font-family: 'Inconsolata', sans-serif;
 $header-font-weight: 800;
 $header-color: #424242;
 $body-font-family: 'Nunito', sans-serif;
@@ -9,7 +9,7 @@ $body-font-color: #424242;
 
 // Global styles
 @include foundation-global-styles;
-@include foundation-forms;
+// @include foundation-forms;
 @include foundation-typography;
 
 // Grids (choose one)
