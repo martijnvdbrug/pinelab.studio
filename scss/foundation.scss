@@ -8,6 +8,12 @@ $body-font-weight: 300;
 $body-font-color: #424242;
 $accent-color: #FEADA6;
 $accent-color-dark: #ff857a;
+$grid-margin-gutters: (
+        small: 40px,
+        medium: 60px,
+        large: 70px,
+        xlarge: 80px
+);
 
 // Global styles
 @include foundation-global-styles;
@@ -70,6 +76,7 @@ $accent-color-dark: #ff857a;
 body, html {
   background-color: white;
 }
+
 h1 {
   font-size: 2.5rem;
   word-wrap: break-word;
@@ -79,11 +86,22 @@ a {
   color: $accent-color;
   font-weight: bold;
 }
+
 a:hover {
   color: $accent-color-dark;
 }
+
 a:focus {
   color: $accent-color-dark;
+}
+
+section h4 {
+  padding: 2rem 0 2rem 0;
+}
+
+.post {
+  color: $body-font-color !important;
+  font-weight: 400;
 }
 
 .padding-c {
@@ -100,7 +118,7 @@ a:focus {
 }
 
 .menu a {
-  display:inline-block;
+  display: inline-block;
   padding: 0;
 }
 
@@ -118,5 +136,20 @@ a:focus {
 
 #intro p {
   font-size: 1.5rem;
-  padding: 3rem 0 10rem 0;
+  padding: 3rem 0 3rem 0;
+}
+
+.post-thumbnail {
+  border-radius: 5px;
+  margin: 1rem 0 1rem 0;
+}
+
+#contact {
+  border-top: 1px solid $body-font-color;
+  margin-top: 4rem;
+  padding-top: 2rem;
+}
+
+.thumbnail-container p {
+  font-style: italic;
 }
