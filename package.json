@@ -4,23 +4,18 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run copy && concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"  \"nodemon --watch src --exec npm run rollup\"",
+    "start": "npm run copy && concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"",
     "build": "npx @11ty/eleventy",
     "copy": "cp node_modules/foundation-sites/dist/js/foundation.min.js js/",
-    "sass": "node-sass scss -o css --output-style compressed --watch",
-    "rollup": "npx rollup src/index.js --file js/bundle.js --format iife"
+    "sass": "node-sass scss -o css --output-style compressed --watch"
   },
-  "author": "",
+  "author": "Pinelab.studio",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "concurrently": "^5.2.0",
     "foundation-sites": "^6.6.3",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "rollup": "^2.23.0",
-    "uglify-js": "^3.10.0"
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "three": "^0.118.3"

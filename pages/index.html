@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /
+---
+
+<section id="intro">
+    <h1>Hoi, ik ben Martijn van Pinelab.studio</h1>
+
+    <p>Als webdeveloper maak ik <a href="/webshop">webshops</a> en <a href="#website">websites</a> onder de naam
+        Pinelab.
+        Bekijk hier meer van mijn <a href="#work">werk</a></p>
+</section>
+
+<section id="pinelab">
+    <h4>Wat doet Pinelab</h4>
+    <div class="grid-x small-up-2 medium-up-3 grid-margin-x">
+
+        {%- for post in collections.pinelab -%}
+        <a href="{{ post.data.permalink }}" class="post cell">
+            <img class="post-thumbnail" src="{{ post.data.thumbnail }}"/>
+            <h5> {{ post.data.title}} </h5>
+            <p> {{ post.data.subtitle}} </p>
+        </a>
+        {%- endfor -%}
+
+    </div>
+</section>
+
+<section id="work">
+    <h4>Werk</h4>
+
+    <p style="color: grey;">Under construction, portfolio komt eraan!</p>
+</section>
