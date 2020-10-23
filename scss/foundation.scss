@@ -26,7 +26,7 @@ $grid-margin-gutters: (
 // @include foundation-flex-grid;
 
 // Generic components
-// @include foundation-button;
+@include foundation-button;
 //@include foundation-button-group;
 //@include foundation-close-button;
 //@include foundation-label;
@@ -99,6 +99,10 @@ section h4 {
   padding: 2rem 0 2rem 0;
 }
 
+section h1 {
+  padding-bottom: 1rem;
+}
+
 .post {
   color: $body-font-color !important;
   font-weight: 400;
@@ -151,4 +155,22 @@ section h4 {
 
 .thumbnail-container p {
   font-style: italic;
+  padding-bottom: 2rem;
+}
+.thumbnail-container img {
+  border: 1px solid whitesmoke;
+}
+
+.button {
+  background-color: $body-font-color;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: $body-font-color;
+  color: $accent-color;
+}
+.button:focus {
+  background-color: $body-font-color;
+  color: $accent-color;
 }
