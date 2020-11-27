@@ -31,7 +31,7 @@ permalink: /
     <h4>Werk</h4>
 
     <div class="grid-x small-up-1 medium-up-2 large-up-3 grid-margin-x">
-        {%- for post in collections.work -%}
+        {%- for post in collections.work reversed -%}
         <a href="{{ post.data.permalink }}" target='_blank' class="post cell">
             <img class="post-thumbnail" src="{{ post.data.thumbnail }}"/>
             <h5> {{ post.data.title}} </h5>
