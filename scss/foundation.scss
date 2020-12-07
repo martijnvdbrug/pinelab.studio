@@ -17,7 +17,7 @@ $grid-margin-gutters: (
 
 // Global styles
 @include foundation-global-styles;
-// @include foundation-forms;
+@include foundation-forms;
 @include foundation-typography;
 
 // Grids (choose one)
@@ -62,7 +62,7 @@ $grid-margin-gutters: (
 
 // Layout components
 @include foundation-off-canvas;
-// @include foundation-reveal;
+@include foundation-reveal;
 @include foundation-sticky;
 // @include foundation-title-bar;
 // @include foundation-top-bar;
@@ -179,5 +179,11 @@ section h1 {
 
 .profile-picture {
   padding: 2rem 0 2rem 0;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
 }
 
