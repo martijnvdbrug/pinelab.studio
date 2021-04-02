@@ -24,56 +24,47 @@
         <div class="container">
           <h1 class="title">E-commerce</h1>
           <hr/>
-          <p>Iedereen moet de mogelijkheid hebben om online te verkopen. Bij Pinelab kun je al vanaf <strong>€1100,-</strong> beginnen met je eigen webshop.</p>
+          <p>Iedereen moet de mogelijkheid hebben om online te verkopen. Bij Pinelab kun je al vanaf <strong>€1100,-</strong> beginnen met het online verkopen van je producten in je eigen webshop.</p>
           <br>
           <br>
 
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
-              <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification is-card">
-                    <p class="title">Best practices</p>
-                    <p>Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden rekening met het
-                      <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google Retail UX Playbook</a></p>
-                  </article>
-                  <article class="tile is-child notification is-card">
-                    <p class="title">Nooit meer kapotte WooCommerce plugins </p>
-                    <p class="subtitle">Pinelab heeft een eigen platform gemaakt op basis van het open source platform
-                      <a href="vendure.io">Vendure</a> met de daarbij behorende plugins. Zo ben je altijd verzekerd van een werkende website. </p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child notification is-card">
-                    <p class="title">Snelheid</p>
-                    <figure class="image">
-                      <img src="/lighthouse-snelheid-score.jpeg">
-                    </figure>
-                    <br>
-                    <p>Snelheid, lighthouse, statische sites</p>
-                  </article>
-                </div>
-              </div>
+          <div class="columns has-text-centered">
+            <div class="column">
+              <b-icon
+                  icon="speedometer"
+                  size="is-large"
+                  type="is-success">
+              </b-icon>
+              <br>
+              <br>
+              <h2 class="title">Snel en SEO-proof</h2>
+              <p>De webshops van Pinelab zijn altijd razendsnel en SEO-proof, omdat webshops als static site worden gemaakt met Gridsome.
+                Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden rekening met het
+                <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google Retail UX Playbook</a></p>
             </div>
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification is-card">
-                <div class="content">
-                  <p class="title">Geen technische kennis nodig</p>
-                  <p class="subtitle">With even more content</p>
-                  <div class="content">
-                    <!-- Content -->
-                  </div>
-                </div>
-              </article>
-              <article class="tile is-child notification is-card">
-                <div class="content">
-                  <p class="title">Daniel van de Haterd</p>
-                  <p class="subtitle">With even more content</p>
-                  <div class="content">
-                    <!-- Content -->
-                  </div>
-                </div>
-              </article>
+
+            <div class="column">
+              <b-icon
+                  icon="connection"
+                  size="is-large"
+                  type="is-success">
+              </b-icon>
+              <br>
+              <br>
+              <h2 class="title">Geen technische kennis nodig</h2>
+              <p>Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden rekening met het
+                <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google Retail UX Playbook</a></p>
+            </div>
+
+            <div class="column">
+              <b-icon
+                  icon="comment-account"
+                  size="is-large"
+                  type="is-success">
+              </b-icon>
+              <br>
+              <br>
+              <h2 class="title">Persoonlijk</h2>
             </div>
           </div>
 
@@ -95,7 +86,7 @@
                 <div class="tile is-parent is-vertical">
                   <article class="tile is-child notification is-card">
                     <p class="title">Open source</p>
-                    <p>Google retail Playbook</p>
+                    <p>Vendure. Plugins NPM</p>
                   </article>
                   <article class="tile is-child notification is-card">
                     <p class="title">NodeJS</p>
@@ -104,12 +95,12 @@
                 </div>
                 <div class="tile is-parent">
                   <article class="tile is-child notification is-card">
-                    <p class="title"></p>
+                    <p class="title">Cloud based</p>
                     <figure class="image is-4by3">
                       <img src="https://bulma.io/images/placeholders/640x480.png">
                     </figure>
                     <br>
-                    <p>Snelheid, lighthouse, statische sites</p>
+                    <p>Google Cloud Run</p>
                   </article>
                 </div>
               </div>
@@ -118,7 +109,7 @@
               <article class="tile is-child notification is-card">
                 <div class="content">
                   <p class="title">GraphQL</p>
-                  <p class="subtitle">With even more content</p>
+                  <p class="subtitle">GraphQL, Apollo Server, Vendure</p>
                   <div class="content">
                     <!-- Content -->
                   </div>
@@ -126,8 +117,8 @@
               </article>
               <article class="tile is-child notification is-card">
                 <div class="content">
-                  <p class="title">Daniel van de Haterd</p>
-                  <p class="subtitle">With even more content</p>
+                  <p class="title">Static site</p>
+                  <p class="subtitle">Vue, Gridsome</p>
                   <div class="content">
                     <!-- Content -->
                   </div>
