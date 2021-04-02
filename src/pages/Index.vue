@@ -24,7 +24,8 @@
         <div class="container">
           <h1 class="title">E-commerce</h1>
           <hr/>
-          <p>Iedereen moet de mogelijkheid hebben om online te verkopen. Bij Pinelab kun je al vanaf <strong>€1100,-</strong> beginnen met het online verkopen van je producten in je eigen webshop.</p>
+          <p>Iedereen moet de mogelijkheid hebben om online te verkopen. Bij Pinelab kun je al vanaf
+            <strong>€1100,-</strong> beginnen met het online verkopen van je producten in je eigen webshop.</p>
           <br>
           <br>
 
@@ -38,9 +39,12 @@
               <br>
               <br>
               <h2 class="title">Snel en SEO-proof</h2>
-              <p>De webshops van Pinelab zijn altijd razendsnel en SEO-proof, omdat webshops als static site worden gemaakt met Gridsome.
-                Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden rekening met het
-                <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google Retail UX Playbook</a></p>
+              <p>De webshops van Pinelab zijn altijd razendsnel en SEO-proof, omdat webshops als static site worden
+                gemaakt met Gridsome.
+                Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden
+                rekening met het
+                <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google
+                  Retail UX Playbook</a></p>
             </div>
 
             <div class="column">
@@ -52,8 +56,10 @@
               <br>
               <br>
               <h2 class="title">Geen technische kennis nodig</h2>
-              <p>Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden rekening met het
-                <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google Retail UX Playbook</a></p>
+              <p>Pinelab zorgt dat alle best practices in jouw webshop zijn verwerkt. Alle Pinelab designs houden
+                rekening met het
+                <a href="https://services.google.com/fh/files/events/pdf_retail_ux_playbook.pdf" target="_blank">Google
+                  Retail UX Playbook</a></p>
             </div>
 
             <div class="column">
@@ -131,6 +137,40 @@
 
       </section>
 
+      <b-button
+          label="Launch component modal"
+          type="is-primary"
+          size="is-medium"
+          @click="isModalActive = true"/>
+
+
+      <b-modal v-model="isModalActive" :width="640" scroll="keep">
+        <div class="card">
+
+          <div class="card-content">
+            <form action="https://formspree.io/f/xdopwkwl" method="POST" target="_blank">
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="_replyto">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Bericht</label>
+                <div class="control">
+                  <input class="input" type="text" name="message" placeholder="Vertel me meer over webshops!">
+                </div>
+              </div>
+              <br>
+              <button class="button" type="submit">Vraag aan!</button>
+            </form>
+          </div>
+        </div>
+
+      </b-modal>
+
+
     </DefaultLayout>
   </div>
 </template>
@@ -138,6 +178,12 @@
 import DefaultLayout from '../layouts/DefaultLayout';
 
 export default {
-  components: {DefaultLayout}
+  components: {DefaultLayout},
+  data() {
+    return {
+      isModalActive: false,
+    }
+  }
 }
+
 </script>
