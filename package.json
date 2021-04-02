@@ -1,23 +1,23 @@
 {
-  "name": "@mistergreen/pinelab-studio",
+  "name": "Pinelab.studio",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "npm run copy && concurrently \"npm run sass\" \"npx @11ty/eleventy --serve\"",
-    "build": "npx @11ty/eleventy",
-    "copy": "cp node_modules/foundation-sites/dist/js/foundation.min.js js/",
-    "sass": "node-sass scss -o css --output-style compressed --watch"
+    "serve:static": "yarn concurrently \"nodemon --ext js,vue --watch '.src' --exec '&& yarn gridsome build && yarn http-server ./dist/'\""
   },
   "author": "Pinelab.studio",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
     "concurrently": "^5.2.0",
-    "foundation-sites": "^6.6.3",
-    "node-sass": "^4.14.1"
+    "gridsome": "^0.7.23",
+    "http-server": "^0.12.3",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1"
   },
   "dependencies": {
-    "three": "^0.118.3"
+    "@fontsource/inconsolata": "^4.2.2",
+    "@fontsource/roboto": "^4.2.2",
+    "buefy": "^0.9.5"
   }
 }

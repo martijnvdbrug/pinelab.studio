@@ -1,0 +1,20 @@
+{
+  "links": [
+    {
+      "name": "E-commerce",
+      "url": "#ecommerce"
+    },
+    {
+      "name": "Tech",
+      "url": "#tech"
+    },
+    {
+      "name": "Werk",
+      "url": "#werk"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$text: #343434;
+$primary: #FEADA6;
+$link: #42CAFD;
+$info: $link;
+$success: #61E786;
+$warning: #7E7F9A;
+$danger: #FEADA6;
+$dark: $text;
+
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+$family-sans-serif: "Roboto";
+$family-primary: "Roboto";
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps(
+                (
+                        "white": (
+                                $white,
+                                $black,
+                        ),
+                        "black": (
+                                $black,
+                                $white,
+                        ),
+                        "light": (
+                                $light,
+                                $light-invert,
+                        ),
+                        "dark": (
+                                $dark,
+                                $dark-invert,
+                        ),
+                        "primary": (
+                                $primary,
+                                $primary-invert,
+                                $primary-light,
+                                $primary-dark,
+                        ),
+                        "link": (
+                                $link,
+                                $link-invert,
+                                $link-light,
+                                $link-dark,
+                        ),
+                        "info": (
+                                $info,
+                                $info-invert,
+                                $info-light,
+                                $info-dark,
+                        ),
+                        "success": (
+                                $success,
+                                $success-invert,
+                                $success-light,
+                                $success-dark,
+                        ),
+                        "warning": (
+                                $warning,
+                                $warning-invert,
+                                $warning-light,
+                                $warning-dark,
+                        ),
+                        "danger": (
+                                $danger,
+                                $danger-invert,
+                                $danger-light,
+                                $danger-dark,
+                        ),
+                        "card": (
+                                #fafafa,
+                                $text,
+                                $danger-light,
+                                $danger-dark,
+                        )
+                ),
+                $custom-colors
+);
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+.hero-body {
+  background-image: linear-gradient(to right top, #feada6, #eba1ad, #d498b0, #b990af, #9e89a9, #958bae, #8b8db2, #7f8fb5, #7a9dc9, #70abdd, #5fbaee, #42cafd);
+}
+
+.notification a {
+  color: $link !important;
+  text-decoration: none !important;
+}
