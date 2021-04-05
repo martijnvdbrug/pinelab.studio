@@ -2,19 +2,19 @@
   "links": [
     {
       "name": "E-commerce",
-      "url": "#ecommerce"
+      "url": "/#ecommerce"
     },
     {
       "name": "Werk",
-      "url": "#werk"
+      "url": "/#werk"
     },
     {
       "name": "Tech",
-      "url": "#tech"
+      "url": "/#tech"
     },
     {
       "name": "Contact",
-      "url": "#contact"
+      "url": "/#contact"
     }
   ]
 }
