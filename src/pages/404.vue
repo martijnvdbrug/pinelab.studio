@@ -7,14 +7,14 @@
     <br>
     <br>
     <br>
-    <h1 class="title"> Werk aan de winkel.... </h1>
-    <p>We zijn er mee bezig, binnenkort kun je hier berekenen wat een website voor jou gaat kosten.</p>
+    <h1 class="title"> Deze pagina bestaat niet.... </h1>
+    <p>De pagina die je zoekt bestaat helaas niet!</p>
     <br>
     <br>
     <br>
     <br>
     <b-button
-        label="Vraag alvast meer informatie aan"
+        label="Neem contact op"
         type="is-info"
         size="is-medium"
         @click="isModalActive = true"/>
@@ -65,12 +65,6 @@ export default {
     return {
       isModalActive: false,
     }
-  },
-  metaInfo: {
-    title: 'Webshop calculator',
-    description: 'Wat gaat een webshop voor jou kosten?',
-    meta: [
-    ],
   }
 }
 </script>

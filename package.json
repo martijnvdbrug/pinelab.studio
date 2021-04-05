@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "serve:static": "yarn concurrently \"nodemon --ext js,vue --watch '.src' --exec '&& yarn gridsome build && yarn http-server ./dist/'\""
+    "serve:static": "yarn concurrently \"nodemon --ext js,vue --watch '.src' --exec 'yarn gridsome build && yarn http-server ./dist/'\""
   },
   "author": "Pinelab.studio",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "gridsome": "^0.7.23",
     "http-server": "^0.12.3",
     "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
     "sass-loader": "^10.1.1"
   },
   "dependencies": {

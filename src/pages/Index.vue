@@ -218,7 +218,12 @@
     </DefaultLayout>
 </template>
 <script>
-
 export default {
+  metaInfo: {
+    title: 'Fullstack development & e-commerce',
+    description: 'Fullstack developer met liefde voor open source en focus op e-commerce.',
+    meta: [
+    ],
+  }
 }
 </script>
