@@ -1,15 +1,6 @@
 <template>
   <div>
     <b-navbar fixed-top class="box2" id="pricingBar">
-      <template #end>
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <img
-              src="/pinelab_logo.png"
-              alt="Pinelab.studio logo"
-              style="padding-right: 30px;"
-          >
-        </b-navbar-item>
-      </template>
       <template #burger>
         <b-navbar-item tag="div" class="burger">
           <b-button
@@ -86,7 +77,7 @@
                 <td>
                   <b-icon type="is-success" icon="check"></b-icon>
                 </td>
-                <td>De mogelijkheid om zelf Instagram shopping te koppelen</td>
+                <td>De mogelijkheid om zelf Instagram en Facebook shopping te koppelen</td>
               </tr>
             </table>
           </div>
@@ -216,6 +207,11 @@
             type="is-info"
             size="is-medium"
             @click="isModalActive = true"/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <g-link to="/">Terug naar de homepagina</g-link>
 
       </div>
     </section>
