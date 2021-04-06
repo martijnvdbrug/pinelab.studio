@@ -145,7 +145,7 @@
                           class="is-dark"
                           type="is-info"
                           size="is-medium"
-                          href="/webshop-calculator/"
+                          href="/wat-kost-een-webshop/"
                           style="color:#fff!important;"
                       />
                     </div>

@@ -285,8 +285,8 @@ export default {
     }
   },
   metaInfo: {
-    title: 'Webshop calculator',
-    description: 'Wat gaat een webshop voor jou kosten?',
+    title: 'Wat kost een webshop?',
+    description: 'Wat gaat een webshop van Pinelab jou kosten? Bereken het hier zelf.',
     meta: [],
   }
 }

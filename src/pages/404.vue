@@ -20,7 +20,7 @@
             label="Of wil je weten wat een webshop kost?"
             type="is-info"
             size="is-medium"
-            href="/webshop-calculator/"
+            href="/wat-kost-een-webshop/"
         />
         <br>
         <br>
