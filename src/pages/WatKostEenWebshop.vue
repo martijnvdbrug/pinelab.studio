@@ -98,14 +98,14 @@
           <b-radio-button v-model="layout"
                           native-value="minimal"
                           type="is-success is-light is-outlined">
-            <b-icon icon="close"></b-icon>
+            <b-icon icon="image"></b-icon>
             <span>Minimal layout</span>
           </b-radio-button>
 
           <b-radio-button v-model="layout"
                           native-value="custom"
                           type="is-success is-light is-outlined">
-            <b-icon icon="check"></b-icon>
+            <b-icon icon="view-dashboard"></b-icon>
             <span>Custom layout</span>
           </b-radio-button>
         </b-field>
@@ -173,7 +173,7 @@
         </b-field>
         <b-field>
           <b-checkbox v-model="extras" native-value="reviews" type="is-success">
-            Ik wil dat klanten productbeoordelingen kunnen plaatsen over mijn producten.
+            Ik wil dat klanten beoordelingen kunnen plaatsen over mijn producten.
           </b-checkbox>
         </b-field>
         <b-field>
