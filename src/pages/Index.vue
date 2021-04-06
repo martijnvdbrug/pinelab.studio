@@ -31,7 +31,7 @@
               label="Wat gaat dat kosten?"
               type="is-info"
               size="is-medium"
-              href="/webshop-calculator/"
+              href="/wat-kost-een-webshop/"
               />
           <br>
           <br>
