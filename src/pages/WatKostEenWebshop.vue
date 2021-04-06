@@ -222,7 +222,7 @@
         <div class="card-content">
           <p style="color:gray;">Jaarlijkse kosten zijn voor de hosting en de persoonlijke support van je webshop.</p>
           <br>
-          <p style="color:gray;">Laat je emailadres achter in ik geef je vrijblijvend meer informatie over de opties die
+          <p style="color:gray;">Laat je emailadres achter en ik geef je vrijblijvend meer informatie over de opties die
             je gekozen hebt.</p>
           <br>
           <form action="https://formspree.io/f/xdopwkwl" method="POST" target="_blank">
