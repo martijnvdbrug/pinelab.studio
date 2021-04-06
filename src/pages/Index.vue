@@ -28,7 +28,7 @@
           <br>
           <b-button
               tag="a"
-              label="Bereken mijn kosten?"
+              label="Bereken mijn kosten"
               type="is-info"
               size="is-medium"
               href="/wat-kost-een-webshop/"
