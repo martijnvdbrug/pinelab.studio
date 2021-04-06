@@ -139,7 +139,15 @@
                     <div class="content">
                       <p class="title">Jouw shop hier?</p>
                       <p>Ben jij toe aan een webshop die wel snel is en goed functioneert?</p>
-                      <a href="#contact">Neem contact op!</a>
+                      <b-button
+                          tag="a"
+                          label="Bekijk de mogelijkheden"
+                          class="is-dark"
+                          type="is-info"
+                          size="is-medium"
+                          href="/webshop-calculator/"
+                          style="color:#fff!important;"
+                      />
                     </div>
                   </article>
                 </div>
@@ -218,7 +226,6 @@
     </DefaultLayout>
 </template>
 <script>
-
 export default {
 }
 </script>

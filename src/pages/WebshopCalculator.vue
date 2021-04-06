@@ -1,6 +1,25 @@
 <template>
   <DefaultLayout>
 
+    <b-navbar fixed-bottom class="pricing-bar">
+      <template #burger>
+        <b-navbar-item tag="div" class="burger">
+          <b-button
+              label="Meer informatie"
+              type="is-info"
+              size="is-medium"
+              @click="isModalActive = true"/>
+        </b-navbar-item>
+        <div style="margin: 10px;">
+            <p class="title">
+              €{{ pricing.total }},-
+            </p>
+            <p style="font-size: 0.9rem;">Waarvan €{{ pricing.yearly }},- per jaar</p>
+            <p style="font-size: 0.7rem;">Indicatieve prijs</p>
+        </div>
+      </template>
+    </b-navbar>
+
     <section id="webshop-calculator" class="section">
       <div class="container">
         <br>
@@ -14,15 +33,21 @@
 
             <table>
               <tr>
-                <td><b-icon type="is-success" icon="check"></b-icon></td>
+                <td>
+                  <b-icon type="is-success" icon="check"></b-icon>
+                </td>
                 <td>Razendsnelle static site</td>
               </tr>
               <tr>
-                <td><b-icon type="is-success" icon="check"></b-icon></td>
+                <td>
+                  <b-icon type="is-success" icon="check"></b-icon>
+                </td>
                 <td>SEO vriendelijk</td>
               </tr>
               <tr>
-                <td><b-icon type="is-success" icon="check"></b-icon></td>
+                <td>
+                  <b-icon type="is-success" icon="check"></b-icon>
+                </td>
                 <td>Persoonlijke support</td>
               </tr>
             </table>
@@ -31,15 +56,21 @@
           <div class="column checklist">
             <table>
               <tr>
-                <td><b-icon type="is-success" icon="check"></b-icon></td>
+                <td>
+                  <b-icon type="is-success" icon="check"></b-icon>
+                </td>
                 <td>Responsive, dus geschikt voor mobiel</td>
               </tr>
               <tr>
-                <td><b-icon type="is-success" icon="check"></b-icon></td>
+                <td>
+                  <b-icon type="is-success" icon="check"></b-icon>
+                </td>
                 <td>Makkelijk zelf producten beheren zonder technische kennis</td>
               </tr>
               <tr>
-                <td><b-icon type="is-success" icon="check"></b-icon></td>
+                <td>
+                  <b-icon type="is-success" icon="check"></b-icon>
+                </td>
                 <td>De mogelijkheid om zelf Instagram shopping te koppelen</td>
               </tr>
             </table>
@@ -48,12 +79,15 @@
 
         <h2 class="title">1. Welke layout wil je?</h2>
 
-        <p :hidden="layout !== 'minimal'"><strong>Minimal layout</strong> is een strakke, minimale layout die de focus legt op je producten. Deze
-          layout is geschikt voor shops tot ~50 producten.</p>
-        <p :hidden="layout !== 'custom'"><strong>Custom layout</strong> is een uitgebreidere layout voor grotere shops met meerdere categorieën. We
-          bepalen samen welke onderdelen er in je webshop komen.</p>
+        <p :hidden="layout !== 'minimal'"><strong>Minimal layout</strong> is een strakke, minimale layout die de focus
+          legt op je producten. Deze
+          layout is geschikt voor shops tot ~50 producten. <a href="https://pinelab-demo.netlify.app/" target="_blank">Bekijk een
+            voorbeeld</a></p>
+        <p :hidden="layout !== 'custom'"><strong>Custom layout</strong> is een uitgebreidere layout voor grotere shops
+          met meerdere categorieën. We
+          bepalen samen welke onderdelen op welke plek in je webshop komen.</p>
         <br>
-        <b-field :oninput="calculate()">
+        <b-field>
           <b-radio-button v-model="layout"
                           native-value="minimal"
                           type="is-success is-light is-outlined">
@@ -73,11 +107,6 @@
         <br>
         <br>
 
-        <b-button
-            label="Vraag gratis voorbeeld aan"
-            type="is-info"
-            size="is-medium"
-            @click="isModalActive = true"/>
       </div>
     </section>
 
@@ -85,11 +114,14 @@
     <b-modal v-model="isModalActive" :width="640" scroll="keep">
       <div class="card">
         <div class="card-content">
+          <p style="color:gray;">Jaarlijkse kosten zijn voor de hosting en de persoonlijke support van je webshop.</p><br>
+          <p style="color:gray;">Laat je emailadres achter in ik geef je vrijblijvend meer informatie.</p>
+          <br>
           <form action="https://formspree.io/f/xdopwkwl" method="POST" target="_blank">
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label">Email*</label>
               <div class="control">
-                <input class="input" type="email" name="_replyto">
+                <input class="input" type="email" name="_replyto" required>
               </div>
             </div>
             <div class="field">
@@ -99,7 +131,7 @@
               </div>
             </div>
             <br>
-            <button class="button" type="submit">Vraag aan!</button>
+            <button class="button is-info" type="submit">Vraag informatie aan</button>
           </form>
         </div>
       </div>
@@ -108,21 +140,40 @@
 </template>
 <script>
 export default {
+  computed: {
+    pricing() {
+      const layout = this.pricingTable[this.layout];
+      const total = layout.fixed;
+      const yearly = layout.yearly || 0;
+      return {
+        total,
+        yearly
+      }
+    }
+  },
   data() {
     return {
       isModalActive: false,
-      layout: 'minimal'
-    }
-  },
-  methods: {
-    calculate() {
-      console.log(this.layout)
+      layout: 'minimal',
+      pricingTable: {
+        minimal: {fixed: 660},
+        custom: {fixed: 1800, yearly: 100}
+      }
     }
   }
 }
 </script>
-<style>
+<style >
 .checklist .icon {
   margin-right: 20px;
+}
+
+.pricing-bar {
+  -webkit-box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.footer {
+  padding-bottom: 100px;
 }
 </style>
