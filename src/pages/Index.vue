@@ -24,11 +24,11 @@
           <h1 class="title">E-commerce</h1>
           <hr/>
           <p>Iedereen moet de mogelijkheid hebben om online te verkopen. Bij Pinelab kun je al vanaf
-            <strong>€1100,-</strong> beginnen met online verkopen via je eigen webshop.</p>
+            <strong>€860,-</strong> beginnen met online verkopen via je eigen webshop.</p>
           <br>
           <b-button
               tag="a"
-              label="Wat gaat dat kosten?"
+              label="Bereken mijn kosten?"
               type="is-info"
               size="is-medium"
               href="/wat-kost-een-webshop/"
