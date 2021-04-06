@@ -225,7 +225,7 @@
           <p style="color:gray;">Laat je emailadres achter en ik geef je vrijblijvend meer informatie over de opties die
             je gekozen hebt.</p>
           <br>
-          <form action="https://formspree.io/f/xdopwkwl" method="POST" target="_blank">
+          <form action="https://formspree.io/f/xdopwkwl" method="POST">
             <div class="field">
               <label class="label">Email*</label>
               <div class="control">
