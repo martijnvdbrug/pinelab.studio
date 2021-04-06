@@ -1,9 +1,17 @@
 <template>
-  <DefaultLayout>
-
-    <b-navbar fixed-bottom class="pricing-bar">
+  <div>
+    <b-navbar fixed-top class="box2" id="pricingBar">
+      <template #end>
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <img
+              src="/pinelab_logo.png"
+              alt="Pinelab.studio logo"
+              style="padding-right: 30px;"
+          >
+        </b-navbar-item>
+      </template>
       <template #burger>
-        <b-navbar-item tag="div" class="burger" >
+        <b-navbar-item tag="div" class="burger">
           <b-button
               label="Meer informatie"
               type="is-info"
@@ -23,6 +31,12 @@
 
     <section id="webshop-calculator" class="section">
       <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <g-link to="/">Terug naar de homepagina</g-link>
         <br>
         <br>
         <h1 class="title">Wat kost een webshop bij Pinelab?</h1>
@@ -86,7 +100,8 @@
             de
             voorbeeld website</a></p>
         <p :hidden="layout !== 'custom'"><strong>Custom layout</strong> is een uitgebreidere layout shops
-          met meerdere producten en categorieën. Met deze layout bepaal je zelf welke onderdelen op welke plek in je webshop komen.</p>
+          met meerdere producten en categorieën. Met deze layout bepaal je zelf welke onderdelen op welke plek in je
+          webshop komen.</p>
         <br>
         <b-field>
           <b-radio-button v-model="layout"
@@ -177,7 +192,9 @@
         </b-field>
         <b-field>
           <b-checkbox v-model="extras" native-value="pushNotifications" type="is-success">
-            Ik wil dat klanten zich kunnen abboneren op <a href="https://www.itpedia.nl/2018/05/05/web-push-notifications-uitgelegd/" target="_blank">pushberichten van mijn webshop</a>.
+            Ik wil dat klanten zich kunnen abboneren op <a
+              href="https://www.itpedia.nl/2018/05/05/web-push-notifications-uitgelegd/" target="_blank">pushberichten
+            van mijn webshop</a>.
           </b-checkbox>
         </b-field>
         <b-field>
@@ -209,7 +226,8 @@
         <div class="card-content">
           <p style="color:gray;">Jaarlijkse kosten zijn voor de hosting en de persoonlijke support van je webshop.</p>
           <br>
-          <p style="color:gray;">Laat je emailadres achter in ik geef je vrijblijvend meer informatie over de opties die je gekozen hebt.</p>
+          <p style="color:gray;">Laat je emailadres achter in ik geef je vrijblijvend meer informatie over de opties die
+            je gekozen hebt.</p>
           <br>
           <form action="https://formspree.io/f/xdopwkwl" method="POST" target="_blank">
             <div class="field">
@@ -230,10 +248,16 @@
         </div>
       </div>
     </b-modal>
-  </DefaultLayout>
+    <Footer/>
+  </div>
 </template>
 <script>
+import Footer from '@/components/Footer';
+
 export default {
+  components: {
+    Footer
+  },
   computed: {
     message() {
       return `€ ${this.pricing.total} (${this.pricing.yearly} jaarlijks), ${this.layout}, ${this.products}, ${this.orders}, ${this.extras}, ${this.extraMessage}`;
@@ -261,7 +285,7 @@ export default {
     return {
       isModalActive: false,
       layout: 'minimal',
-      products: 'p20_100',
+      products: 'p0_20',
       orders: 'o0_5',
       extras: [],
       more: false,

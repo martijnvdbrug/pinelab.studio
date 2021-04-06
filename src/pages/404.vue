@@ -29,3 +29,13 @@
       </div>
     </section>
   </DefaultLayout>
+</template>
+<script>
+import global from "@/data/global.json";
+
+export default {
+  data: () => ({
+    global
+  })
+};
+</script>

@@ -120,7 +120,7 @@
                 <div class="tile is-parent">
                   <article class="tile is-child notification is-card">
                     <p class="title">Daniël van de Haterd</p>
-                    <p>Webshop voor kunstenaar <a href="dvandehaterd.nl" target="_blank">Daniël van de Haterd </a>.
+                    <p>Webshop voor kunstenaar <a href="https://dvandehaterd.nl" target="_blank">Daniël van de Haterd </a>.
                       Cleane minimale vormgeving, om zoveel mogelijk de focus op de kunstwerken te leggen.</p>
                     <figure class="image">
                       <g-image src="/danielvandehaterd.jpg"/>
