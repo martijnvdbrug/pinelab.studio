@@ -160,6 +160,12 @@ export default {
         custom: {fixed: 1800, yearly: 100}
       }
     }
+  },
+  metaInfo: {
+    title: 'Webshop calculator',
+    description: 'Wat gaat een webshop voor jou kosten?',
+    meta: [
+    ],
   }
 }
 </script>

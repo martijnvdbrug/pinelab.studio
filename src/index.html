@@ -5,6 +5,21 @@
     <link href="/favicon.png" rel="icon">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css"></noscript>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173630600-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-173630600-2');
+        gtag('config', 'UA-173630600-2', { 'anonymize_ip': true });
+    </script>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://pinelab.studio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pinelab.studio - E-commerce & fullstack development">
+    <meta property="og:description" content="Fullstack development met een focus op e-commerce.">
+    <meta property="og:image" content="https://pinelab.studio/og_image.jpg">
 </head>
 <body ${bodyAttrs}>
 ${app}
