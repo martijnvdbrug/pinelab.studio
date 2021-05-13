@@ -183,7 +183,7 @@
         </b-field>
         <b-field>
           <b-checkbox v-model="extras" native-value="pushNotifications" type="is-success">
-            Ik wil dat klanten zich kunnen abboneren op <a
+            Ik wil dat klanten zich kunnen abonneren op <a
               href="https://www.itpedia.nl/2018/05/05/web-push-notifications-uitgelegd/" target="_blank">pushberichten
             van mijn webshop</a>.
           </b-checkbox>
